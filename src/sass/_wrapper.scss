@@ -1,0 +1,29 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 37rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.begin.leaved {
+    display: none;
+}
+
+.slide1 {
+    opacity: 0;
+}
+
+.fadeout {
+    -webkit-animation: fadeout 0.8s ease-in-out forwards;
+    -o-animation: fadeout 0.8s ease-in-out forwards;
+    animation: fadeout 0.8s ease-in-out forwards;
+}
+
+
+.fadein{
+  -webkit-animation: fadein 0.8s ease-in-out forwards;
+  -o-animation: fadein 0.8s ease-in-out forwards;
+  animation: fadein 0.8s ease-in-out forwards;
+}

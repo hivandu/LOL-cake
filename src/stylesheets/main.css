@@ -1,1 +1,381 @@
-*{padding:0;margin:0}
+/* create by Hivan Du */
+/* global css */
+/* line 3, ../sass/_global.scss */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* line 8, ../sass/_global.scss */
+html {
+  height: 100%;
+  font-family: "microsoft yahei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #130319;
+}
+
+/* line 13, ../sass/_global.scss */
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0  auto;
+}
+
+/* line 18, ../sass/_global.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 21, ../sass/_global.scss */
+li {
+  list-style: none;
+}
+
+/* line 24, ../sass/_global.scss */
+p,
+a,
+button,
+span {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 30, ../sass/_global.scss */
+input {
+  outline: none;
+}
+
+/* line 1, ../sass/_load.scss */
+.loading {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 300;
+  background: url("../images/bg-load.jpg") no-repeat;
+  background-size: cover;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+}
+
+/* line 13, ../sass/_load.scss */
+.loading .gear {
+  padding-top: 15rem;
+}
+
+/* line 17, ../sass/_load.scss */
+.loading .gear-body {
+  width: 2rem;
+}
+
+/* line 23, ../sass/_load.scss */
+.loading .text {
+  margin-top: 2.166rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* line 29, ../sass/_load.scss */
+.loading .text .dot {
+  position: relative;
+  top: -0.2rem;
+  color: #d0c0c0;
+}
+
+/* line 35, ../sass/_load.scss */
+.loading.leave {
+  opacity: 0;
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+/* line 42, ../sass/_load.scss */
+.loading.leaved {
+  display: none;
+}
+
+/* line 1, ../sass/_wrapper.scss */
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 37rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 10, ../sass/_wrapper.scss */
+.begin.leaved {
+  display: none;
+}
+
+/* line 14, ../sass/_wrapper.scss */
+.slide1 {
+  opacity: 0;
+}
+
+/* line 18, ../sass/_wrapper.scss */
+.fadeout {
+  -webkit-animation: fadeout 0.8s ease-in-out forwards;
+  -o-animation: fadeout 0.8s ease-in-out forwards;
+  animation: fadeout 0.8s ease-in-out forwards;
+}
+
+/* line 25, ../sass/_wrapper.scss */
+.fadein {
+  -webkit-animation: fadein 0.8s ease-in-out forwards;
+  -o-animation: fadein 0.8s ease-in-out forwards;
+  animation: fadein 0.8s ease-in-out forwards;
+}
+
+/* line 7, ../sass/main.scss */
+.swiper-container {
+  position: relative;
+  height: 100%;
+}
+
+/* line 12, ../sass/main.scss */
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, ../sass/main.scss */
+.pa {
+  position: absolute;
+}
+
+/* line 22, ../sass/main.scss */
+.tc {
+  text-align: center;
+}
+
+/* line 26, ../sass/main.scss */
+.slide-icon {
+  width: 1.12rem;
+  position: fixed;
+  z-index: 200;
+  left: 50%;
+  margin-left: -0.56rem;
+  bottom: 2px;
+  -webkit-animation: flash 1s forwards infinite;
+  animation: flash 1s forwards infinite;
+}
+
+/* line 37, ../sass/main.scss */
+.slide-icon img {
+  width: 100%;
+  opacity: 0.3;
+  -webkit-animation: down 1s forwards infinite;
+  animation: down 1s forwards infinite;
+}
+
+/* line 44, ../sass/main.scss */
+.audio-click {
+  position: absolute;
+  right: 2.6%;
+  top: 1%;
+  z-index: 999;
+  -webkit-animation: circle 14s infinite linear;
+  -o-animation: circle 14s infinite linear;
+  animation: circle 14s infinite linear;
+}
+
+/* line 54, ../sass/main.scss */
+.audio-click.active {
+  -webkit-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
+/* scene */
+/* line 63, ../sass/main.scss */
+.scene {
+  overflow: hidden;
+  background: url(../images/scene-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 71, ../sass/main.scss */
+.fadeIn {
+  opacity: 0;
+}
+
+/* line 75, ../sass/main.scss */
+.begin {
+  opacity: 1;
+}
+
+/* line 1, ../sass/_image.scss */
+.logo {
+  position: absolute;
+  width: 6.3rem;
+  top: 1rem;
+  left: 9.33rem;
+}
+
+/* line 9, ../sass/_image.scss */
+.index .title {
+  position: absolute;
+  width: 17.66rem;
+  top: 4.13rem;
+  left: 3.66rem;
+}
+/* line 15, ../sass/_image.scss */
+.index .btn-start {
+  position: absolute;
+  width: 8.7rem;
+  bottom: 3rem;
+  left: 8.16rem;
+  z-index: 99;
+}
+/* line 22, ../sass/_image.scss */
+.index .index-pros {
+  position: absolute;
+  width: 24.66rem;
+  top: 7.86rem;
+  left: -0.433rem;
+}
+
+/* line 31, ../sass/_image.scss */
+.slide1 .title {
+  position: absolute;
+  width: 17.73rem;
+  bottom: 5rem;
+  left: 3.5rem;
+}
+
+/*animation*/
+@-webkit-keyframes flash {
+  0% {
+    opacity: .3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -20px, 0) scale(1, 1);
+    transform: translate3d(0, -20px, 0) scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes down {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -20px, 0) scale(1, 1);
+    transform: translate3d(0, -20px, 0) scale(1, 1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: rotateZ(360deg);
+    -webkit-transform-origin: 50% 50%;
+  }
+  to {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+@keyframes circle {
+  from {
+    -webkit-transform: rotateZ(360deg);
+    -webkit-transform-origin: 50% 50%;
+  }
+  to {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+@-webkit-keyframes left {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(22rem);
+  }
+}
+@keyframes left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(22rem);
+  }
+}
+@-webkit-keyframes right {
+  from {
+    -webkit-transform: translateX(45rem);
+  }
+  to {
+    -webkit-transform: translateX(22rem);
+  }
+}
+@keyframes right {
+  from {
+    transform: translateX(45rem);
+  }
+  to {
+    transform: translateX(22rem);
+  }
+}
+@-webkit-keyframes slide_down {
+  from {
+    -webkit-transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(40rem);
+  }
+}
+@keyframes slide_down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(40rem);
+  }
+}
+@keyframes fadeout {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  form {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

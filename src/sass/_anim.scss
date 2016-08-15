@@ -1,0 +1,145 @@
+/*animation*/
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: .3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -20px, 0) scale(1, 1);
+    transform: translate3d(0, -20px, 0) scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    transform: translate3d(0px, 0px, 0) scale(1.1, 1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -20px, 0) scale(1, 1);
+    transform: translate3d(0, -20px, 0) scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: rotateZ(360deg);
+    -webkit-transform-origin: 50% 50%;
+  }
+  to {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+
+@keyframes circle {
+  from {
+    -webkit-transform: rotateZ(360deg);
+    -webkit-transform-origin: 50% 50%;
+  }
+  to {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes left {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(22rem);
+  }
+}
+
+@keyframes left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(22rem);
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    -webkit-transform: translateX(45rem);
+  }
+  to {
+    -webkit-transform: translateX(22rem);
+  }
+}
+
+@keyframes right {
+  from {
+    transform: translateX(45rem);
+  }
+  to {
+    transform: translateX(22rem);
+  }
+}
+
+@-webkit-keyframes slide_down {
+  from {
+    -webkit-transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(40rem);
+  }
+}
+
+@keyframes slide_down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(40rem);
+  }
+}
+
+@keyframes fadeout{
+  form{
+    opacity:1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes fadein{
+  form{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}

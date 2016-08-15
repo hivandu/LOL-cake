@@ -1,2 +1,80 @@
+/* create by Hivan Du */
+
 @charset 'utf-8';
-@import "reset";
+@import "global";
+@import "load";
+@import "wrapper";
+.swiper-container {
+  position: relative;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pa {
+  position: absolute;
+}
+
+.tc {
+  text-align: center;
+}
+
+.slide-icon {
+  width: 1.12rem;
+  position: fixed;
+  z-index: 200;
+  left: 50%;
+  margin-left: -0.56rem;
+  bottom: 2px;
+  -webkit-animation: flash 1s forwards infinite;
+  animation: flash 1s forwards infinite;
+}
+
+.slide-icon img {
+  width: 100%;
+  opacity: 0.3;
+  -webkit-animation: down 1s forwards infinite;
+  animation: down 1s forwards infinite;
+}
+
+.audio-click {
+  position: absolute;
+  right: 2.6%;
+  top: 1%;
+  z-index: 999;
+  -webkit-animation: circle 14s infinite linear;
+  -o-animation: circle 14s infinite linear;
+  animation: circle 14s infinite linear;
+}
+
+.audio-click.active {
+  -webkit-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
+
+/* scene */
+
+.scene {
+  overflow: hidden;
+  background: url(../images/scene-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.fadeIn {
+  opacity: 0;
+}
+
+.begin{
+  opacity:1;
+}
+
+@import "image";
+@import "anim";
