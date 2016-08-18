@@ -10,11 +10,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>LOL - 中秋月饼</title>
+
     <!-- 此处如果有转发icon，替换图片 -->
-    <!-- <div id='wx_pic' style='margin:0 auto;display:none;'>
+    <div id='wx_pic' style='margin:0 auto;display:none;'>
         <img lazy-src='./images/title.jpg' width="100" />
-    </div> -->
-    <!-- <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css"> -->
+    </div>
+
     <link rel="stylesheet" type="text/css" href="./stylesheets/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/animate.min.css">
@@ -29,7 +30,6 @@
         <section class="pa loading">
             <div class="gear tc">
                 <div class="gear-body">
-                    
                 </div>
                 <div class="text">
                     <img lazy-src="./images/LOADING-text.png" alt="">
@@ -207,5 +207,18 @@
 <script src="./javascripts/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="./javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://sdi.3g.qq.com/js?aid=2016080820104901189"></script>
+  <script type="text/javascript">
+  _sdi.share.init({
+    img_url: "./images/title.jpg",
+    link: location.href,
+    desc: 'LOL - 中秋月饼',
+    title: 'LOL，哈根达斯中秋月饼'
+  }, function(opt) {
+    //分享事件前触发的事件
+  }, function(res) {
+    //分享事件后触发的事件
+  });
+  </script>
 
 </html>
