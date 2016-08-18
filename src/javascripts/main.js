@@ -174,28 +174,7 @@ var app = {
 
                 // 月亮按钮点击
                 $('.btn-moon').on('touchend', function() {
-                    $('.scale-moon-outer').css('display', 'block');
-                    $('.swiper-container').addClass('fadeOut');
-                    setTimeout(function() {
-                        $('.scale-moon').addClass('scale-moon-anim');
-                    }, 600);
-                    setTimeout(function() {
-                        $('.swiper-container').addClass('leaved');
-                        $('.scale-moon-outer').addClass('fadeout');
-                        $('.endPage').addClass('fadeIn');
-                    }, 2600);
-                    setTimeout(function() {
-                        $('.scale-moon-outer').css('display', 'none');
-                        $('.end-title1').addClass('fadeInUp');;
-                        $('.end-title2').addClass('fadeInUp');
-                        $('.end-product').addClass('fadeInUp');
-                        $('.end-price').addClass('fadeIn');
-                        $('.end-text').addClass('fadeIn');
-                    }, 3600);
-                    setTimeout(function() {
-                        $('.btn-buy').addClass('fadein');
-                        $('.btn-share').addClass('fadein');
-                    }, 4400);
+
                 })
 
                 // 加载背景音乐
@@ -324,9 +303,29 @@ var app = {
                                 $('.person-icon-5').addClass('fadeIn');
                             }, 2000);
                             setTimeout(function() {
-                                $('.slide6 .touch-hand').show();
-                                $('.slide6 .touch-hand').addClass('fadeInUp');
-                            }, 2200);
+                                $('.scale-moon-outer').css('display', 'block');
+                                $('.swiper-container').addClass('fadeOut');
+                                setTimeout(function() {
+                                    $('.scale-moon').addClass('scale-moon-anim');
+                                }, 600);
+                                setTimeout(function() {
+                                    $('.swiper-container').addClass('leaved');
+                                    $('.scale-moon-outer').addClass('fadeout');
+                                    $('.endPage').addClass('fadeIn');
+                                }, 2600);
+                                setTimeout(function() {
+                                    $('.scale-moon-outer').css('display', 'none');
+                                    $('.end-title1').addClass('fadeInUp');;
+                                    $('.end-title2').addClass('fadeInUp');
+                                    $('.end-product').addClass('fadeInUp');
+                                    $('.end-price').addClass('fadeIn');
+                                    $('.end-text').addClass('fadeIn');
+                                }, 3600);
+                                setTimeout(function() {
+                                    $('.btn-buy').addClass('fadein');
+                                    $('.btn-share').addClass('fadein');
+                                }, 4400);
+                            }, 4800);
                             break;
                     }
 
