@@ -41,7 +41,7 @@ gulp.task('sassrev', function() {
 })
 
 gulp.task('javascript', function() {
-    return gulp.src(['./src/javascripts/jquery.min.js', './src/javascripts/main.js'])
+    return gulp.src(['./src/javascripts/jquery.min.js', './src/javascripts/main.js', './src/swiper.min.js'])
         .pipe(uglify())
         .pipe(rev())
         .pipe(gulp.dest('./dist/javascripts'))

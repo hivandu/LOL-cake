@@ -17,69 +17,195 @@
     <!-- <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="./stylesheets/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/animate.min.css">
 </head>
 
 <body>
-    <audio src="./audio/bgm.mp3" loop controls="controls" id="audio" style="position: absolute; top:-999px"></audio>
+    <audio src="./audio/Revel.mp3" loop controls="controls" id="audio" style="position: absolute; top:-999px"></audio>
     <div class="wrapper" style="color: white;">
         <!-- music controls -->
         <img alt="" lazy-src="./images/yinfu.png" class="audio-click" width="7.8%">
         <!-- loading section -->
         <section class="pa loading">
             <div class="gear tc">
-                <img lazy-src="./images/loading.gif" alt="" width="64" class="gear-body" />
+                <div class="gear-body">
+                    
+                </div>
                 <div class="text">
+                    <img lazy-src="./images/LOADING-text.png" alt="">
                     <span class="dot">1%</span>
                 </div>
             </div>
         </section>
-        <section class="begin index" style="height:100%;">
-            <img lazy-src="./images/logo.png" alt="" class="anim logo">
-            <img lazy-src="./images/index-title.png" alt="" class="anim title">
-            <a href="#"><img lazy-src="./images/btn-start.png" alt="" class="btn-start"></a>
-            <img lazy-src="./images/index-pros.png" alt="" class="index-pros">
-            <img lazy-src="./images/index-bg.jpg" alt="" width="100%">
-        </section>
         <!-- end loading -->
+        <!-- 第一屏首页 : 入口 -->
+        <section class="begin startPage" style="height:100%;">
+            <img class="btn-start animated" lazy-src="./images/btn-start.png" alt="">
+            <img lazy-src="./images/logo.png" alt="" class="logo">
+            <div class="startPage-title">
+                <img alt="" lazy-src="./images/startPage-title.png" class="start-title">
+                <img alt="" lazy-src="./images/startPage-dot.png" class="start-dot">
+                <img alt="" lazy-src="./images/startPage-line.png" class="start-line animated">
+            </div>
+            <div class="startPage-main animated">
+                <img alt="" lazy-src="./images/startPage-mask.png" class="start-mask">
+                <img alt="" lazy-src="./images/startPage-cloud-1.png" class="start-cloud-1">
+                <img alt="" lazy-src="./images/startPage-cloud-3.png" class="start-cloud-3">
+                <img alt="" lazy-src="./images/startPage-moon.png" class="start-moon animated">
+                <img alt="" lazy-src="./images/startPage-cloud-2.png" class="start-cloud-2">
+                <img alt="" lazy-src="./images/startPage-img3.png" class="start-img3 animated">
+                <img alt="" lazy-src="./images/startPage-img2.png" class="start-img2 animated">
+                <img alt="" lazy-src="./images/startPage-img4.png" class="start-img4 animated">
+                <img alt="" lazy-src="./images/startPage-img5.png" class="start-img5 animated">
+                <img alt="" lazy-src="./images/startPage-img1.png" class="start-img1 animated">
+                <img alt="" lazy-src="./images/startPage-bg.png" class="start-bg animated">
+            </div>
+        </section>
+        <!-- 第二屏首页：过渡 -->
+        <section class="secondPage animated" style="height:100%">
+            <img lazy-src="./images/secondPage-letter.png" alt="" class="letter">
+            <img alt="" lazy-src="./images/touch-hand.png" class="touch-hand animated">
+            <img alt="" lazy-src="./images/logo.png" class="logo">
+            <img alt="" lazy-src="./images/secondPage-1.png" class="second-1 animated">
+            <img alt="" lazy-src="./images/secondPage-2.png" class="second-2 animated">
+            <img alt="" lazy-src="./images/secondPage-3.png" class="second-3 animated">
+            <img alt="" lazy-src="./images/secondPage-4.png" class="second-4 animated">
+            <img alt="" lazy-src="./images/secondPage-5.png" class="second-5 animated">
+            <img lazy-src="./images/secondPage-screen.png" alt="" class="screen animated">
+            <div class="typeContainer">
+            </div>
+            <div class="secondPage-title">
+                <img lazy-src="./images/secondPage-title.png" class="second-title animated" />
+                <img lazy-src="./images/secondPage-dot.png" class="second-dot" />
+                <img lazy-src="./images/secondPage-line.png" class="second-line animated" />
+            </div>
+            <div class="screen-light-out">
+                <div class="screen-light"></div>
+                <img lazy-src="./images/light.png" alt="" class="light" style="display:none;">
+            </div>
+        </section>
         <!-- swiper start -->
         <!-- the siwper icon -->
         <div class="slide-icon">
-            <img lazy-src="./images/slide.png" alt="^">
+            <img lazy-src="./images/slide.png" alt="">
         </div>
-        <div class="swiper-container">
+        <div class="scale-moon-outer">
+            <img lazy-src="./images/slide6-moon.png" alt="" class="scale-moon">
+        </div>
+        <div class="swiper-container animated">
             <div class="swiper-wrapper">
-                <section class="swiper-slide slide1">
-                    <img lazy-src="./images/logo.png" alt="" class="logo">
-                    <img lazy-src="./images/slide1-title.png" alt="" class="title">
-                    <img lazy-src="./images/slide1-bg.jpg" alt="" width="100%">
+                <section class="swiper-slide slide1 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide1-mask.png" class="slide1-mask animated">
+                    <img alt="" lazy-src="./images/slide1-2.png" class="slide1-2 animated">
+                    <img alt="" lazy-src="./images/slide1-3.png" class="slide1-3 animated">
+                    <img alt="" lazy-src="./images/slide1-bg.png" class="slide1-bg animated">
+                    <div class="slide1-text">
+                        <img alt="" lazy-src="./images/slide1-t-1.png" class="slide1-t-1 animated">
+                        <img alt="" lazy-src="./images/slide1-t-2.png" class="slide1-t-2 animated">
+                        <img alt="" lazy-src="./images/slide1-t-3.png" class="slide1-t-3 animated">
+                        <img alt="" lazy-src="./images/slide1-t-4.png" class="slide1-t-4 animated">
+                    </div>
+                    <img lazy-src="./images/slide1-font.png" alt="" style="display:none;">
                 </section>
-                <section class="swiper-slide slide2">
-                    <img lazy-src="./images/slide2-bg.jpg" alt="" width="100%">
+                <section class="swiper-slide slide2 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide2-mask.png" class="slide2-mask animated">
+                    <img alt="" lazy-src="./images/slide2-2.png" class="slide2-2 animated">
+                    <img alt="" lazy-src="./images/slide2-3.png" class="slide2-3 animated">
+                    <img alt="" lazy-src="./images/slide2-bg.png" class="slide2-bg animated">
+                    <img lazy-src="./images/slide2-font.png" alt="" style="display:none;">
+                    <div class="slide2-text">
+                        <img alt="" lazy-src="./images/slide2-t-1.png" class="slide2-t-1 animated">
+                        <img alt="" lazy-src="./images/slide2-t-2.png" class="slide2-t-2 animated">
+                        <img alt="" lazy-src="./images/slide2-t-3.png" class="slide2-t-3 animated">
+                        <img alt="" lazy-src="./images/slide2-t-4.png" class="slide2-t-4 animated">
+                    </div>
                 </section>
-                <section class="swiper-slide slide3">
-                    <img lazy-src="./images/slide3-bg.jpg" alt="" width="100%">
+                <section class="swiper-slide slide3 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide3-mask.png" class="slide3-mask animated">
+                    <img alt="" lazy-src="./images/slide3-2.png" class="slide3-2 animated">
+                    <img alt="" lazy-src="./images/slide3-3.png" class="slide3-3 animated">
+                    <img alt="" lazy-src="./images/slide3-bg.png" class="slide3-bg animated">
+                    <img lazy-src="./images/slide3-font.png" alt="" style="display:none;">
+                    <div class="slide3-text">
+                        <img alt="" lazy-src="./images/slide3-t-1.png" class="slide3-t-1 animated">
+                        <img alt="" lazy-src="./images/slide3-t-2.png" class="slide3-t-2 animated">
+                        <img alt="" lazy-src="./images/slide3-t-3.png" class="slide3-t-3 animated">
+                        <img alt="" lazy-src="./images/slide3-t-4.png" class="slide3-t-4 animated">
+                    </div>
                 </section>
-                <section class="swiper-slide slide4">
-                    <img lazy-src="./images/slide4-bg.jpg" alt="" width="100%">
+                <section class="swiper-slide slide4 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide4-mask.png" class="slide4-mask animated">
+                    <img alt="" lazy-src="./images/slide4-2.png" class="slide4-2 animated">
+                    <img alt="" lazy-src="./images/slide4-bg.png" class="slide4-bg animated">
+                    <img lazy-src="./images/slide4-font.png" alt="" style="display:none;">
+                    <div class="slide4-text">
+                        <img alt="" lazy-src="./images/slide4-t-1.png" class="slide4-t-1 animated">
+                        <img alt="" lazy-src="./images/slide4-t-2.png" class="slide4-t-2 animated">
+                        <img alt="" lazy-src="./images/slide4-t-3.png" class="slide4-t-3 animated">
+                        <img alt="" lazy-src="./images/slide4-t-4.png" class="slide4-t-4 animated">
+                    </div>
                 </section>
-                <section class="swiper-slide slide5">
-                    <img lazy-src="./images/slide5-bg.jpg" alt="" width="100%">
+                <section class="swiper-slide slide5 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide5-mask.png" class="slide5-mask animated">
+                    <img alt="" lazy-src="./images/slide5-2.png" class="slide5-2 animated">
+                    <img alt="" lazy-src="./images/slide5-3.png" class="slide5-3 animated">
+                    <img alt="" lazy-src="./images/slide5-bg.png" class="slide5-bg animated">
+                    <img lazy-src="./images/slide5-font.png" alt="" style="display:none;">
+                    <div class="slide5-text">
+                        <img alt="" lazy-src="./images/slide5-t-1.png" class="slide5-t-1 animated">
+                        <img alt="" lazy-src="./images/slide5-t-2.png" class="slide5-t-2 animated">
+                        <img alt="" lazy-src="./images/slide5-t-3.png" class="slide5-t-3 animated">
+                        <img alt="" lazy-src="./images/slide5-t-4.png" class="slide5-t-4 animated">
+                    </div>
                 </section>
                 <section class="swiper-slide slide6">
-                    <img lazy-src="./images/slide6-bg.jpg" alt="" width="100%">
-                </section>
-                <section class="swiper-slide slide7">
-                    <img lazy-src="./images/slide7-bg.jpg" alt="" width="100%">
-                </section>
-                <section class="swiper-slide slide8">
-                    <img lazy-src="./images/slide8-bg.jpg" alt="" width="100%">
+                    <img lazy-src="./images/btn-moon.png" alt="" class="btn-moon">
+                    <img lazy-src="./images/touch-hand.png" alt="" 
+                    class="touch-hand animated">
+                    <div class="slide6-person animated">
+                        <div class="person1 animated"><img alt="" lazy-src="./images/slide6-p-1.png" class="person-1"><img alt="" lazy-src="./images/slide6-i-1.png" class="person-icon-1 animated"></div>
+                        <div class="person2 animated"><img alt="" lazy-src="./images/slide6-p-2.png" class="person-2"><img alt="" lazy-src="./images/slide6-i-2.png" class="person-icon-2 animated"></div>
+                        <div class="person3 animated"><img alt="" lazy-src="./images/slide6-p-3.png" class="person-3"><img alt="" lazy-src="./images/slide6-i-3.png" class="person-icon-3 animated"></div>
+                        <div class="person4 animated"><img alt="" lazy-src="./images/slide6-p-4.png" class="person-4"><img alt="" lazy-src="./images/slide6-i-4.png" class="person-icon-4 animated"></div>
+                        <div class="person5 animated"><img alt="" lazy-src="./images/slide6-p-5.png" class="person-5"><img alt="" lazy-src="./images/slide6-i-5.png" class="person-icon-5 animated"></div>
+                    </div>
+                    <div class="slide6-title-outer animated">
+                        <img lazy-src="./images/slide6-title.png" alt="" class="slide6-title animated">
+                        <img lazy-src="./images/slide6-line.png" alt="" class="slide6-line animated">
+                    </div>
+                    <div class="slide6-moon-outer animated">
+                        <img lazy-src="./images/slide6-moon.png" alt="" class="slide6-moon animated">
+                        <img lazy-src="./images/slide6-moon-t.png" alt="" class="slide6-text animated">
+                    </div>
+                    <img lazy-src="./images/slide6-bg.jpg" alt="" class="slide6-bg">
                 </section>
             </div>
         </div>
+        <section class="swiper-slide endPage animated">
+            <a href="http://lolriotmall.qq.com/html/wareinfo_127.html" class="btn-buy animated"><img alt="" lazy-src="./images/btn-buy.png"></a>
+                <a href="#" class="btn-share animated"><img alt="" lazy-src="./images/btn-share.png"></a>
+                <img lazy-src="./images/logo.png" alt="" class="logo">
+                <img lazy-src="./images/end-product.png" alt="" class="end-product animated">
+                <img lazy-src="./images/share.png" alt="" class="share-layer">
+                <div class="end-moon-outer">
+                    <img lazy-src="./images/end-moon.png" alt="" class="end-moon animated">
+                    <img lazy-src="./images/end-title1.png" alt="" class="end-title1 animated">
+                    <img lazy-src="./images/end-title2.png" alt="" class="end-title2 animated">
+                </div>
+                <img lazy-src="./images/end-price.png" alt="" class="end-price animated">
+                <img lazy-src="./images/end-text.png" alt="" class="end-text animated">
+                <img lazy-src="./images/end-bg.jpg" alt="" class="end-bg">
+        </section>
     </div>
 </body>
 <script src="./javascripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="./javascripts/swiper.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="./javascripts/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="./javascripts/main.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

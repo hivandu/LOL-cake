@@ -1,0 +1,165 @@
+.startPage {
+    background-color: #0E0706;
+    .title {
+        position: absolute;
+        width: 17.66rem;
+        top: 4.13rem;
+        left: 3.66rem;
+    }
+    .btn-start {
+        position: absolute;
+        width: 8.7rem;
+        bottom: 1.5rem;
+        left: 8.16rem;
+        z-index: 101;
+        opacity: 0;
+    }
+}
+
+.startPage-title {
+    position: relative;
+    top: 4.13rem;
+    .start-title {
+        position: absolute;
+        height: 1.93rem;
+        left: 3.66rem;
+        transform:scaleX(5);
+        opacity:0;
+        -webkit-transition: all 1s cubic-bezier(0.1, 0.96, 0.82, 1);
+        transition: all 1s cubic-bezier(0.1, 0.96, 0.82, 1);
+    }
+    .start-title-anim{
+      transform:scaleX(1);
+      opacity:1;
+    }
+    .start-dot {
+        position: absolute;
+        width: 0.4rem;
+        left: 50%;
+        margin-left: -0.2rem;
+        top: 0.8rem;
+    }
+    .start-line {
+        position: absolute;
+        width: 16.33rem;
+        margin-left: -8.16rem;
+        left: 50%;
+        top: 0.3rem;
+        opacity: 0;
+        -webkit-transition: all 1s cubic-bezier(0.1, 0.96, 0.82, 1);
+        -o-transition: all 1s cubic-bezier(0.1, 0.96, 0.82, 1);
+        transition: all 1s cubic-bezier(0.1, 0.96, 0.82, 1);
+    }
+    .start-line-anim{
+      top: 1.8rem;
+      opacity:1;
+    }
+}
+
+.startPage-main {
+    position: absolute;
+    width: 21.8rem;
+    height: 27.7rem;
+    top: 7.83rem;
+    left: 1.56rem;
+    overflow: hidden;
+    opacity: 0;
+    .start-mask {
+      z-index: 100;
+    }
+    .start-bg{
+      position: absolute;
+      width: 98%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+    .start-cloud-1 {
+        position: absolute;
+        width: 3.76rem;
+        top: 5.33rem;
+        left: 13.36rem;
+        z-index: 99;
+    }
+    .start-cloud-3 {
+        position: absolute;
+        width: 4.96rem;
+        top: 3.06rem;
+        left: 6.8rem;
+        z-index: 99;
+    }
+    .start-cloud-2{
+      position: absolute;
+      width: 3.5rem;
+      top:2.26rem;
+      left: 9.9rem;
+      z-index:97;
+    }
+    .start-moon {
+        position: absolute;
+        width: 5.36rem;
+        top: 1.76em;
+        left: 10.7rem;
+        opacity: 0;
+        z-index:98;
+    }
+    .start-mask, .start-img2,.start-img3,.start-img4,.start-img5{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .start-img1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 98%;
+      z-index:95;
+      opacity: 0;
+    }
+    .start-img2{
+      z-index:96;
+      opacity: 0;
+    }
+    .start-img3{
+      z-index:97;
+      opacity: 0;
+    }
+    .start-img4{
+      z-index:98;
+      opacity: 0;
+    }
+    .start-img5{
+      z-index:99;
+      opacity: 0;
+    }
+}
+
+.zoomInX{
+  -webkit-animation: zoomInX 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation: zoomInX 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.leftRight{
+  -webkit-animation: leftRight 10s ease infinite;
+  -o-animation: leftRight 10s ease infinite;
+  animation: leftRight 10s ease infinite;
+}
+
+.rightLeft{
+  -webkit-animation: rightLeft 10s ease infinite;
+  -o-animation: rightLeft 10s ease infinite;
+  animation: rightLeft 10s ease infinite;
+}
+
+.slideDown{
+  -webkit-animation: slide_down 1s cubic-bezier(0.07, 0.71, 0.61, 0.86);
+  -o-animation: slide_down 1s cubic-bezier(0.07, 0.71, 0.61, 0.86);
+  animation: slide_down 1s cubic-bezier(0.07, 0.71, 0.61, 0.86);
+}
+
+.slideLeftRight{
+  -webkit-animation: slideLeftRight 3s ease infinite;
+  -o-animation: slideLeftRight 3s ease infinite;
+  animation: slideLeftRight 3s ease infinite;
+}

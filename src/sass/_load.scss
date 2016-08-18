@@ -15,28 +15,41 @@
 }
 
 .loading .gear-body {
-    width: 2rem;
-    // -webkit-animation: circle 1s forwards infinite ease-in;
-    // animation: circle 1s forwards infinite ease-in;
+    width: 135px;
+    background: url(../images/moon-items.png) no-repeat;
+    background-size: 540px 675px;
+    height: 135px;
+    position: absolute;
+    left: 50%;
+    margin-left: -67px;
+    top: 11rem;
+    -webkit-animation: moonload 3s step-end infinite;
+    animation: moonload 3s step-end infinite;
+    transform: scale(0.5);
 }
 
 .loading .text {
-    margin-top: 2.166rem;
-    color: #fff;
-    font-size: 1.1rem;
+    margin-top: 3rem;
+    img{
+        width: 4.25rem;
+        display:block;
+        margin-left: 10.2rem;
+    }
+    
 }
 
 .loading .text .dot {
     position: relative;
-    top: -0.2rem;
-    color: #d0c0c0;
+    font-size: 1.2rem;
+    top: 0.5rem;
+    color: #ffeec0;
 }
 
 .loading.leave {
     opacity: 0;
-    -webkit-transform: scale(10);
-    -ms-transform: scale(10);
-    transform: scale(10);
+    // -webkit-transform: scale(10);
+    // -ms-transform: scale(10);
+    // transform: scale(10);
 }
 
 .loading.leaved {
