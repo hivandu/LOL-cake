@@ -1,73 +1,71 @@
 .slide3 {
     background-color: #0E0706;
-    opacity:0;
+    opacity: 0;
     .slide3-mask {
         position: absolute;
         width: 100%;
         top: 0.33rem;
         left: 0;
-        z-index:101;
+        z-index: 101;
     }
     .slide3-2 {
         position: absolute;
         width: 24.86rem;
-        z-index:98;
-        opacity:0;
+        z-index: 98;
+        opacity: 0;
         top: 0.33rem;
     }
     .slide3-3 {
         position: absolute;
         width: 24.86rem;
-        z-index:97;
-        opacity:0;
+        z-index: 97;
+        opacity: 0;
     }
     .slide3-bg {
         position: absolute;
         width: 24.8rem;
         top: 0.33rem;
     }
-    .slide-font{
-      top: 14rem;
-      left: 6rem;
-      background: url(../images/slide3-font.png) no-repeat;
-      background-size: 1600px;
-      opacity:1;
+    .slide-font {
+        top: 13rem;
+        left: 5.3rem;
+        background: url(../images/slide3-font.png) no-repeat;
+        background-size: 1600px;
+        opacity: 1;
     }
 }
 
-
-.slide3-text{
-  position: absolute;
-  z-index:101;
-  top: 28.86rem;
-  left:2.73rem;
-
-  .slide3-t-1{
-    width: 0.96rem;
-    top: 0.2rem;
-    left: 0;
+.slide3-text {
     position: absolute;
-    opacity:0;
-  }
-  .slide3-t-2{
-    position: absolute;
-    opacity:0;
-    width: 2.7rem;
-    top: 0;
-    left:1.53rem;
-  }
-  .slide3-t-3{
-    position: absolute;
-    opacity:0;
-    width: 0.9rem;
-    top: 0.26rem;
-    left: 4.8rem;
-  }
-  .slide3-t-4{
-    position: absolute;
-    opacity:0;
-    width: 0.83rem;
-    top: 0.26rem;
-    left:6.03rem;
-  }
+    z-index: 101;
+    top: 28.86rem;
+    left: 2.73rem;
+    .slide3-t-1 {
+        width: 0.96rem;
+        top: 0.2rem;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+    }
+    .slide3-t-2 {
+        position: absolute;
+        opacity: 0;
+        width: 2.7rem;
+        top: 0;
+        left: 1.53rem;
+    }
+    .slide3-t-3 {
+        position: absolute;
+        opacity: 0;
+        width: 0.9rem;
+        top: 0.26rem;
+        left: 4.8rem;
+    }
+    .slide3-t-4 {
+        position: absolute;
+        opacity: 0;
+        width: 0.83rem;
+        top: 0.26rem;
+        left: 6.03rem;
+    }
 }
