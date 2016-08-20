@@ -30,6 +30,15 @@
 
 .loading .text {
     margin-top: 3rem;
+    .load-text{
+        width: 4.26rem;
+        height: 0.6rem;
+        position: relative;
+        left:50%;
+        margin-left: -2.13rem;
+        background: url(../images/LOADING-text.png) no-repeat;
+        background-size: cover;
+    }
     img{
         width: 4.25rem;
         display:block;

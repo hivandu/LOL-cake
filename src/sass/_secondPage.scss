@@ -35,6 +35,15 @@
         left: 12.5rem;
         top: 25.7rem;
     }
+    .screen-click{
+        position: absolute;
+        width: 6rem;
+        height: 4.5rem;
+        top: 14.56em;
+        left: 11.466em;
+        z-index:102;
+        opacity:0;
+    }
     .screen {
         width: 5.96rem;
         top: 14.56rem;

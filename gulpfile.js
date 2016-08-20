@@ -52,10 +52,10 @@ gulp.task('javascript', function() {
 gulp.task('imagemin', function() {
     return gulp.src('./src/images/*.{png, jpg, gif,ico}')
         .pipe(imagemin())
-        .pipe(rev())
-        .pipe(gulp.dest('./dist/images'))
-        .pipe(rev.manifest('images.json'))
-        .pipe(gulp.dest('./rev'));
+        // .pipe(rev())
+        .pipe(gulp.dest('./dist/images'));
+        // .pipe(rev.manifest('images.json'))
+        // .pipe(gulp.dest('./rev'));
 })
 
 gulp.task('rev', function() {

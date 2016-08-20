@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <img lazy-src="images/bg-load.jpg" alt="" width="100%">
+    <img alt="" lazy-src="images/yinfu.png" class="audio-click" width="7.8%">
+    <div class="startPage-main animated">
+        <img alt="" lazy-src="images/startPage-mask.png" class="start-mask">
+        <img alt="" lazy-src="images/startPage-cloud-1.png" class="start-cloud-1">
+        <img alt="" lazy-src="images/startPage-cloud-3.png" class="start-cloud-3">
+        <img alt="" lazy-src="images/startPage-moon.png" class="start-moon animated">
+        <img alt="" lazy-src="images/startPage-cloud-2.png" class="start-cloud-2">
+        <img alt="" lazy-src="images/startPage-img3.png" class="start-img3 animated">
+        <img alt="" lazy-src="images/startPage-img2.png" class="start-img2 animated">
+        <img alt="" lazy-src="images/startPage-img4.png" class="start-img4 animated">
+        <img alt="" lazy-src="images/startPage-img5.png" class="start-img5 animated">
+        <img alt="" lazy-src="images/startPage-img1.png" class="start-img1 animated">
+        <img alt="" lazy-src="images/startPage-bg.png" class="start-bg animated">
+    </div>
+    <div id="status"></div>
+    <script src="javascripts/package.js"></script>
+    <script>
+    var nativeXHR = function() {
+        var e = null;
+        if (window["XMLHttpRequest"] != undefined)
+            e = new XMLHttpRequest;
+        else
+            try {
+                e = new ActiveXObject("MSXML2.XMLHTTP")
+            } catch (t) {
+                try {
+                    e = new ActiveXObject("Microsoft.XMLHTTP")
+                } catch (t) {
+                    e = null
+                }
+            }
+        return e
+    }
+
+    var EXTENSION_PATT = /\/?[^/]+\.(\w{1,5})$/i;
+    var xhr = nativeXHR();
+    xhr.responseType = "arraybuffer";
+
+    xhr.onload = function(e) {
+
+        var zip = new ZipPackage()
+        zip.parse(e.target.response)
+        zip.decompress(function(r) {
+            if (r.type == "fileload") {
+                var type = r.file.name.match(EXTENSION_PATT)[1]
+                var blob = createBlob(r.file.buffer, "image/" + type)
+                r.file.data = blob;
+            }
+            if (r.type == "complete") {
+
+                var pic = document.getElementsByTagName("img")
+
+                for (var i = 0; i < pic.length; i++) {
+                    var spath = (pic[i].getAttribute("lazy-src"))
+
+                    var file = zip.getFile(spath);
+                    if (file) {
+                        pic[i].src = URL.createObjectURL(file.data)
+                        pic[i].onload = function() {
+                            URL.revokeObjectURL(file.data)
+                        }
+                    }
+                }
+            }
+        })
+    }
+    xhr.onprogress = function(event) {
+        var divStatus = document.getElementById('status');
+        if (event.lengthComputable) {
+            divStatus.innerHTML = 'Recived' + event.loaded / event.total * 100 + ' %';
+        }
+        if (event.load) {
+            goMainProcess();
+        }
+    }
+    xhr.open("get", "lib.swf", true);
+    xhr.send()
+    </script>
+</body>
+
+</html>

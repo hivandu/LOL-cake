@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0,maximum-scale=1">
+    <meta name="apple-touch-fullscreen" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>LOL - 中秋月饼</title>
+    <!-- 此处如果有转发icon，替换图片 -->
+    <div id='wx_pic' style='margin:0 auto;display:none;'>
+        <img lazy-src='./images/title.jpg' width="100" />
+    </div>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/main-b6ee498d4a.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/animate.min.css">
+</head>
+
+<body>
+    <audio src="./audio/Revel.mp3" loop controls="controls" id="audio" style="position: absolute; top:-999px"></audio>
+    <div class="wrapper" style="color: white;">
+        <!-- music controls -->
+        <img alt="" lazy-src="./images/yinfu-d022879473.png" class="audio-click" width="7.8%">
+        <!-- loading section -->
+        <section class="pa loading">
+            <div class="gear tc">
+                <div class="gear-body">
+                </div>
+                <div class="text">
+                    <img lazy-src="./images/LOADING-text.png" alt="">
+                    <span class="dot">1%</span>
+                </div>
+            </div>
+        </section>
+        <!-- end loading -->
+        <!-- 第一屏首页 : 入口 -->
+        <section class="begin startPage" style="height:100%;">
+            <img class="btn-start animated" lazy-src="./images/btn-start-a845dd40f7.png" alt="">
+            <img lazy-src="./images/logo-09b962fe97.png" alt="" class="logo">
+            <div class="startPage-title">
+                <img alt="" lazy-src="./images/startPage-title-8d1cae15c5.png" class="start-title">
+                <img alt="" lazy-src="./images/startPage-dot-666b853df3.png" class="start-dot">
+                <img alt="" lazy-src="./images/startPage-line-671c26fca0.png" class="start-line animated">
+            </div>
+            <div class="startPage-main animated">
+                <img alt="" lazy-src="./images/startPage-mask-57f3e742da.png" class="start-mask">
+                <img alt="" lazy-src="./images/startPage-cloud-1-22e3f4619b.png" class="start-cloud-1">
+                <img alt="" lazy-src="./images/startPage-cloud-3-60ada78056.png" class="start-cloud-3">
+                <img alt="" lazy-src="./images/startPage-moon-09ce7ade7b.png" class="start-moon animated">
+                <img alt="" lazy-src="./images/startPage-cloud-2-78c3e8c609.png" class="start-cloud-2">
+                <img alt="" lazy-src="./images/startPage-img3-a4018a0b5e.png" class="start-img3 animated">
+                <img alt="" lazy-src="./images/startPage-img2-64d65a409b.png" class="start-img2 animated">
+                <img alt="" lazy-src="./images/startPage-img4-28f9057a26.png" class="start-img4 animated">
+                <img alt="" lazy-src="./images/startPage-img5-6dca9421a0.png" class="start-img5 animated">
+                <img alt="" lazy-src="./images/startPage-img1-19a4bad05a.png" class="start-img1 animated">
+                <img alt="" lazy-src="./images/startPage-bg-4040f3e1ec.png" class="start-bg animated">
+            </div>
+        </section>
+        <!-- 第二屏首页：过渡 -->
+        <section class="secondPage animated" style="height:100%">
+            <img lazy-src="./images/secondPage-letter-fbfbd80be8.png" alt="" class="letter">
+            <img alt="" lazy-src="./images/touch-hand-f2ed3bd2c9.png" class="touch-hand animated">
+            <img alt="" lazy-src="./images/logo-09b962fe97.png" class="logo">
+            <img alt="" lazy-src="./images/secondPage-1-0bba465777.png" class="second-1 animated">
+            <img alt="" lazy-src="./images/secondPage-2-f4c4db5c95.png" class="second-2 animated">
+            <img alt="" lazy-src="./images/secondPage-3-70dc448b66.png" class="second-3 animated">
+            <img alt="" lazy-src="./images/secondPage-4-ce766e813e.png" class="second-4 animated">
+            <img alt="" lazy-src="./images/secondPage-5-5ff1396d19.png" class="second-5 animated">
+            <img lazy-src="./images/secondPage-screen-070f2cf5e8.png" alt="" class="screen animated">
+            <div class="typeContainer">
+            </div>
+            <div class="secondPage-title">
+                <img lazy-src="./images/secondPage-title-296153ec4e.png" class="second-title animated" />
+                <img lazy-src="./images/secondPage-dot-666b853df3.png" class="second-dot" />
+                <img lazy-src="./images/secondPage-line-671c26fca0.png" class="second-line animated" />
+            </div>
+            <div class="screen-light-out">
+                <div class="screen-light"></div>
+                <img lazy-src="./images/light-fe894c6c15.png" alt="" class="light" style="display:none;">
+            </div>
+        </section>
+        <!-- swiper start -->
+        <!-- the siwper icon -->
+        <div class="slide-icon">
+            <img lazy-src="./images/slide-8bc6c97ba0.png" alt="">
+        </div>
+        <div class="scale-moon-outer">
+            <img lazy-src="./images/slide6-moon-dc8c11adfc.png" alt="" class="scale-moon">
+        </div>
+        <div class="swiper-container animated">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide1 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide1-mask-d583af1db1.png" class="slide1-mask animated">
+                    <img alt="" lazy-src="./images/slide1-2-9bed8673f1.png" class="slide1-2 animated">
+                    <img alt="" lazy-src="./images/slide1-3-43b04d42c4.png" class="slide1-3 animated">
+                    <img alt="" lazy-src="./images/slide1-bg-9caf32f91a.png" class="slide1-bg animated">
+                    <div class="slide1-text">
+                        <img alt="" lazy-src="./images/slide1-t-1-2089e68f50.png" class="slide1-t-1 animated">
+                        <img alt="" lazy-src="./images/slide1-t-2-abb7409bd7.png" class="slide1-t-2 animated">
+                        <img alt="" lazy-src="./images/slide1-t-3-fbd199bc1f.png" class="slide1-t-3 animated">
+                        <img alt="" lazy-src="./images/slide1-t-4-ab47265f06.png" class="slide1-t-4 animated">
+                    </div>
+                    <img lazy-src="./images/slide1-font-fb75eee23b.png" alt="" style="display:none;">
+                </section>
+                <section class="swiper-slide slide2 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide2-mask-55927e30db.png" class="slide2-mask animated">
+                    <img alt="" lazy-src="./images/slide2-2-539d2487f6.png" class="slide2-2 animated">
+                    <img alt="" lazy-src="./images/slide2-3-c3a2ebac2b.png" class="slide2-3 animated">
+                    <img alt="" lazy-src="./images/slide2-bg-934b39aa0f.png" class="slide2-bg animated">
+                    <img lazy-src="./images/slide2-font-15858a064a.png" alt="" style="display:none;">
+                    <div class="slide2-text">
+                        <img alt="" lazy-src="./images/slide2-t-1-7a7c13d14d.png" class="slide2-t-1 animated">
+                        <img alt="" lazy-src="./images/slide2-t-2-a75a5d29b4.png" class="slide2-t-2 animated">
+                        <img alt="" lazy-src="./images/slide2-t-3-c2f38424c8.png" class="slide2-t-3 animated">
+                        <img alt="" lazy-src="./images/slide2-t-4-d1fbaacd57.png" class="slide2-t-4 animated">
+                    </div>
+                </section>
+                <section class="swiper-slide slide3 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide3-mask-e726a5b340.png" class="slide3-mask animated">
+                    <img alt="" lazy-src="./images/slide3-2-09ce587e82.png" class="slide3-2 animated">
+                    <img alt="" lazy-src="./images/slide3-3-c1c4202ce7.png" class="slide3-3 animated">
+                    <img alt="" lazy-src="./images/slide3-bg-2926b235b3.png" class="slide3-bg animated">
+                    <img lazy-src="./images/slide3-font-240d0f4041.png" alt="" style="display:none;">
+                    <div class="slide3-text">
+                        <img alt="" lazy-src="./images/slide3-t-1-462fab7129.png" class="slide3-t-1 animated">
+                        <img alt="" lazy-src="./images/slide3-t-2-323bd99a8a.png" class="slide3-t-2 animated">
+                        <img alt="" lazy-src="./images/slide3-t-3-4be0a5f026.png" class="slide3-t-3 animated">
+                        <img alt="" lazy-src="./images/slide3-t-4-4d2604ca18.png" class="slide3-t-4 animated">
+                    </div>
+                </section>
+                <section class="swiper-slide slide4 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide4-mask-cf45295fca.png" class="slide4-mask animated">
+                    <img alt="" lazy-src="./images/slide4-2-4f0632aaa5.png" class="slide4-2 animated">
+                    <img alt="" lazy-src="./images/slide4-bg-710b54d755.png" class="slide4-bg animated">
+                    <img lazy-src="./images/slide4-font-7e651c243d.png" alt="" style="display:none;">
+                    <div class="slide4-text">
+                        <img alt="" lazy-src="./images/slide4-t-1-4af4523a59.png" class="slide4-t-1 animated">
+                        <img alt="" lazy-src="./images/slide4-t-2-60855b31db.png" class="slide4-t-2 animated">
+                        <img alt="" lazy-src="./images/slide4-t-3-16b1fe9a54.png" class="slide4-t-3 animated">
+                        <img alt="" lazy-src="./images/slide4-t-4-6ad87b8d9d.png" class="slide4-t-4 animated">
+                    </div>
+                </section>
+                <section class="swiper-slide slide5 animated">
+                    <span class="slide-font"></span>
+                    <img alt="" lazy-src="./images/slide5-mask-0b6c0b4327.png" class="slide5-mask animated">
+                    <img alt="" lazy-src="./images/slide5-2-c7d83a145a.png" class="slide5-2 animated">
+                    <img alt="" lazy-src="./images/slide5-3-d596f892e3.png" class="slide5-3 animated">
+                    <img alt="" lazy-src="./images/slide5-bg-90b26462f0.png" class="slide5-bg animated">
+                    <img lazy-src="./images/slide5-font-e9b80ab6bf.png" alt="" style="display:none;">
+                    <div class="slide5-text">
+                        <img alt="" lazy-src="./images/slide5-t-1-b1caa6ab24.png" class="slide5-t-1 animated">
+                        <img alt="" lazy-src="./images/slide5-t-2-537850a823.png" class="slide5-t-2 animated">
+                        <img alt="" lazy-src="./images/slide5-t-3-a84240d259.png" class="slide5-t-3 animated">
+                        <img alt="" lazy-src="./images/slide5-t-4-dde1dce9cb.png" class="slide5-t-4 animated">
+                    </div>
+                </section>
+                <section class="swiper-slide slide6">
+                    <img lazy-src="./images/btn-moon-54c22f80c5.png" alt="" class="btn-moon">
+                    <img lazy-src="./images/touch-hand-f2ed3bd2c9.png" alt="" class="touch-hand animated">
+                    <div class="slide6-person animated">
+                        <div class="person1 animated"><img alt="" lazy-src="./images/slide6-p-1-c475ac6536.png" class="person-1"><img alt="" lazy-src="./images/slide6-i-1-795ede4925.png" class="person-icon-1 animated"></div>
+                        <div class="person2 animated"><img alt="" lazy-src="./images/slide6-p-2-2c6c6ecba5.png" class="person-2"><img alt="" lazy-src="./images/slide6-i-2-9ebcace251.png" class="person-icon-2 animated"></div>
+                        <div class="person3 animated"><img alt="" lazy-src="./images/slide6-p-3-b20811f49a.png" class="person-3"><img alt="" lazy-src="./images/slide6-i-3-5ba9b46fbe.png" class="person-icon-3 animated"></div>
+                        <div class="person4 animated"><img alt="" lazy-src="./images/slide6-p-4-a21fae74d5.png" class="person-4"><img alt="" lazy-src="./images/slide6-i-4-40569c6f34.png" class="person-icon-4 animated"></div>
+                        <div class="person5 animated"><img alt="" lazy-src="./images/slide6-p-5-408a705da7.png" class="person-5"><img alt="" lazy-src="./images/slide6-i-5-5ea53dfe7b.png" class="person-icon-5 animated"></div>
+                    </div>
+                    <div class="slide6-title-outer animated">
+                        <img lazy-src="./images/slide6-title-6c29e60c27.png" alt="" class="slide6-title animated">
+                        <img lazy-src="./images/slide6-line-9ee0baddeb.png" alt="" class="slide6-line animated">
+                    </div>
+                    <div class="slide6-moon-outer animated">
+                        <img lazy-src="./images/slide6-moon-dc8c11adfc.png" alt="" class="slide6-moon animated">
+                        <img lazy-src="./images/slide6-moon-t-4261c1ab31.png" alt="" class="slide6-text animated">
+                    </div>
+                    <img lazy-src="./images/slide6-bg.jpg" alt="" class="slide6-bg">
+                </section>
+            </div>
+        </div>
+        <section class="swiper-slide endPage animated">
+            <a href="http://lolriotmall-wx.qq.com/weixin/html/wareInfo/wareInfo_127.html" class="btn-buy animated"><img alt="" lazy-src="./images/btn-buy-b662c6c640.png"></a>
+            <a href="#" class="btn-share animated"><img alt="" lazy-src="./images/btn-share-ae7a100584.png"></a>
+            <img lazy-src="./images/logo-09b962fe97.png" alt="" class="logo">
+            <img lazy-src="./images/end-product-2cde0a066a.png" alt="" class="end-product animated">
+            <img lazy-src="./images/share-cad80bcc8e.png" alt="" class="share-layer">
+            <div class="end-moon-outer">
+                <img lazy-src="./images/end-moon-35acdbdf29.png" alt="" class="end-moon animated">
+                <img lazy-src="./images/end-title1-05700f584c.png" alt="" class="end-title1 animated">
+                <img lazy-src="./images/end-title2-47e793ddc3.png" alt="" class="end-title2 animated">
+            </div>
+            <img lazy-src="./images/end-price-bc2e493108.png" alt="" class="end-price animated">
+            <img lazy-src="./images/end-text-05ab2716a8.png" alt="" class="end-text animated">
+            <img lazy-src="./images/end-bg.jpg" alt="" class="end-bg">
+        </section>
+    </div>
+</body>
+<script src="./javascripts/jquery-648e24110e.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./javascripts/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./javascripts/main-33a1cb6100.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://sdi.3g.qq.com/js?aid=2016080820104901189"></script>
+<script type="text/javascript">
+_sdi.share.init({
+    img_url: "./images/title.jpg",
+    link: location.href,
+    desc: 'LOL - 中秋月饼',
+    title: 'LOL，哈根达斯中秋月饼'
+}, function(opt) {
+    //分享事件前触发的事件
+}, function(res) {
+    //分享事件后触发的事件
+});
+</script>
+
+</html>
