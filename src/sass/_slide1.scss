@@ -9,41 +9,54 @@
     }
     .slide1-2 {
         position: absolute;
-        left:0.02rem;
+        left: 0.02rem;
         width: 24.84rem;
         z-index: 98;
         opacity: 0;
     }
     .slide1-3 {
         position: absolute;
-        left:0.02rem;
+        left: 0.02rem;
         width: 24.84rem;
         z-index: 97;
         opacity: 0;
     }
     .slide1-bg {
         position: absolute;
-        left:0.02rem;
+        left: 0.02rem;
         width: 24.84rem;
-        opacity:0;
+        opacity: 0;
     }
-    .slide-font{
-      top: 6rem;
-      left: -11.7rem;
-      background: url(../images/slide1-font.png) no-repeat;
-      background-size: 1600px;
+    .slide-font {
+        top: 0;
+        left: 0;
+        background: url(../images/slide1-font.png) no-repeat;
+        background-size: 1600px;
     }
+    .slide-font-outer {
+        top: 7.5rem;
+        left: -12rem;
+        transition: all 1s ease;
+    }
+}
+
+.slide-font-outer {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    z-index: 100;
+    overflow: hidden;
 }
 
 .slide-font {
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 1600px;
+    height: 1600px;
     display: block;
     z-index: 100;
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: slideFont 2s step-end infinite;
-    animation: slideFont 2s step-end infinite;
+    // animation: slideFont 2s step-end infinite;
     transition: all 1s ease;
 }
 
@@ -52,39 +65,45 @@
     opacity: 1;
 }
 
+.slide1-text {
+    position: absolute;
+    z-index: 101;
+    top: 28.8rem;
+    left: 15.16rem;
+    .slide1-t-1 {
+        width: 0.96rem;
+        top: 0.2rem;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+    }
+    .slide1-t-2 {
+        position: absolute;
+        opacity: 0;
+        width: 2.7rem;
+        top: 0;
+        left: 1.53rem;
+    }
+    .slide1-t-3 {
+        position: absolute;
+        opacity: 0;
+        width: 0.86rem;
+        top: 0.26rem;
+        left: 4.8rem;
+    }
+    .slide1-t-4 {
+        position: absolute;
+        opacity: 0;
+        width: 0.9rem;
+        top: 0.26rem;
+        left: 6.03rem;
+    }
+}
 
-.slide1-text{
-  position: absolute;
-  z-index:101;
-  top: 28.8rem;
-  left:15.16rem;
-
-  .slide1-t-1{
-    width: 0.96rem;
-    top: 0.2rem;
-    left: 0;
+.lantern {
+    width: 14.73rem;
     position: absolute;
-    opacity:0;
-  }
-  .slide1-t-2{
-    position: absolute;
-    opacity:0;
-    width: 2.7rem;
-    top: 0;
-    left:1.53rem;
-  }
-  .slide1-t-3{
-    position: absolute;
-    opacity:0;
-    width: 0.86rem;
-    top: 0.26rem;
-    left: 4.8rem;
-  }
-  .slide1-t-4{
-    position: absolute;
-    opacity:0;
-    width: 0.9rem;
-    top: 0.26rem;
-    left:6.03rem;
-  }
+    z-index: 101;
+    top: 6rem;
+    left: 5rem;
 }

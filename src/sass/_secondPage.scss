@@ -35,14 +35,15 @@
         left: 12.5rem;
         top: 25.7rem;
     }
-    .screen-click{
+    .screen-click {
         position: absolute;
-        width: 6rem;
-        height: 4.5rem;
-        top: 14.56em;
-        left: 11.466em;
-        z-index:102;
-        opacity:0;
+        width: 9rem;
+        height: 7.5rem;
+        top: 13.56em;
+        left: 10.466em;
+        z-index: 110;
+        // opacity: 0;
+        // background-color: red;
     }
     .screen {
         width: 5.96rem;
@@ -52,11 +53,11 @@
     }
     .typeContainer {
         position: absolute;
-        width: 4.8rem;
+        width: 6rem;
         font-size: 0.6rem;
         color: #4d1f00;
         top: 15.2rem;
-        left: 11.96rem;
+        left: 11.56rem;
         z-index: 100;
         opacity: 0.7;
         transform: rotate(5deg) scale(0.7);
@@ -69,12 +70,27 @@
         z-index: 101;
         opacity: 0;
     }
-    .letter {
+    .letter-close {
         position: absolute;
-        width: 1rem;
-        top: 17.3rem;
-        left: 14.8rem;
-        z-index: 100;
+        width: 16.66rem;
+        height: 12.46rem;
+        top: 11.3rem;
+        z-index: 101;
+        transform: scale3d(0.08, 0.08, 1);
+        left: 6rem;
+        transition: all 1s ease;
+        opacity: 0;
+    }
+    .letter-close-anim {
+        transform: scale3d(1, 1, 1) translate3d(-2rem, 5rem, 0);
+    }
+    .letter-open {
+        position: absolute;
+        width: 16.7rem;
+        height: 18.5rem;
+        top: 10.3rem;
+        left: 4rem;
+        z-index: 101;
         display: none;
     }
 }

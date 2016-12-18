@@ -8,6 +8,13 @@ $(function() {
     $('html').css('font-size', size);
 });
 
+var screenHeight = window.screen.height;
+var screenWidth = window.screen.width;
+if (screenHeight / screenWidth < 1.65) {
+    $('.end-price').addClass('small');
+    $('.end-text').addClass('small');
+}
+
 //  limit browser drag move
 // document.addEventListener('touchmove', function(e) {
 //   e.preventDefault();
@@ -66,15 +73,15 @@ var app = {
                 }
             })
         }
-        xhr.onprogress = function(event){
+        xhr.onprogress = function(event) {
             var divStatus = $('.loading .dot');
             if (event.lengthComputable) {
                 divStatus.text(parseInt(event.loaded / event.total * 100) + ' %');
                 if (event.loaded == event.total) {
-                    divStatus.text('正在解析...');
-                    setTimeout(function(){
+                    // divStatus.text('正在解析...');
+                    setTimeout(function() {
                         goMainProcess();
-                    },3000);
+                    }, 3200);
                 }
             }
         }
@@ -90,30 +97,30 @@ var app = {
                 $('.start-title').addClass('start-title-anim');
                 $('.start-line').addClass('start-line-anim');
                 $('.loading').addClass('leaved');
-                    $('.scene').addClass('loaded');
-                    console.log('start');
-                    $('.startPage-main').addClass('fadeInUp');
-                    setTimeout(function() {
-                        $('.start-bg').addClass('fadeIn');
-                        $('.startPage .logo').addClass('fadeInDown');
-                        $('.start-cloud-1').addClass('rightLeft');
-                        $('.start-cloud-2').addClass('rightLeft');
-                        $('.start-cloud-3').addClass('leftRight');
-                    }, 200);
-                    setTimeout(function() {
-                        $('.start-moon').addClass('fadeInUp');
-                        $('.start-img3').addClass('fadeInUp');
-                    }, 400);
-                    setTimeout(function() {
-                        $('.start-img1').addClass('fadeInUp');
-                        $('.start-img2').addClass('fadeInUp');
-                    }, 600);
-                    setTimeout(function() {
-                        $('.start-img5').addClass('fadeIn')
-                    }, 1600);
-                    setTimeout(function() {
-                        $('.start-img4').addClass('fadeIn');
-                    }, 2000);
+                $('.scene').addClass('loaded');
+                console.log('start');
+                $('.startPage-main').addClass('fadeInUp');
+                setTimeout(function() {
+                    $('.start-bg').addClass('fadeIn');
+                    $('.startPage .logo').addClass('fadeInDown');
+                    $('.start-cloud-1').addClass('rightLeft');
+                    $('.start-cloud-2').addClass('rightLeft');
+                    $('.start-cloud-3').addClass('leftRight');
+                }, 200);
+                setTimeout(function() {
+                    $('.start-moon').addClass('fadeInUp');
+                    $('.start-img3').addClass('fadeInUp');
+                }, 400);
+                setTimeout(function() {
+                    $('.start-img1').addClass('fadeInUp');
+                    $('.start-img2').addClass('fadeInUp');
+                }, 600);
+                setTimeout(function() {
+                    $('.start-img5').addClass('fadeIn')
+                }, 1600);
+                setTimeout(function() {
+                    $('.start-img4').addClass('fadeIn');
+                }, 2000);
             }, 1000);
         }
     },
@@ -144,6 +151,9 @@ var app = {
                         setTimeout(function() {
                             $('.screen').addClass('fadeIn');
                             typeStart();
+                            setTimeout(function(){
+                                $('.letter-close').addClass('fadeIn');
+                            }, 2000);
                         }, 1100);
                     }, 800);
                 }, 4000);
@@ -152,7 +162,7 @@ var app = {
                     console.log('second out');
                     $('.typeContainer').hide(200);
                     $('.touch-hand').hide(200);
-                    $('.letter').hide().css('opacity', 0);
+                    $('.letter-outer').css('opacity', 0);
                     $('.screen-light').show(100).addClass('light-scale');
                     setTimeout(function() {
                         $('.secondPage').css('display', 'block').removeClass('fadein').addClass('fadeOut');
@@ -168,7 +178,7 @@ var app = {
                             }, 500);
                             setTimeout(function() {
                                 $('.slide1-3').addClass('fadeIn');
-                                $('.slide1 .slide-font').addClass('slide-font-trans')
+                                $('.slide1 .slide-font-outer').addClass('slide-font-trans')
                             }, 400);
                             setTimeout(function() {
                                 $('.slide1-t-1').addClass('fadeInLeft')
@@ -287,6 +297,7 @@ var app = {
                             break;
                         case 5:
                             $('.slide-icon').hide(400);
+                            app.mySwiper.lockSwipes();
                             $('.slide6').addClass('fadeIn');
                             setTimeout(function() {
                                 $('.slide6-title').addClass('zoomInX').addClass('fadeIn');
@@ -335,7 +346,7 @@ var app = {
                                     $('.btn-buy').addClass('fadein');
                                     $('.btn-share').addClass('fadein');
                                 }, 4400);
-                            }, 4800);
+                            }, 3000);
                             break;
                     }
 
@@ -385,9 +396,11 @@ var app = {
         // share layer
         $('.btn-share').on('touchend', function() {
             $('.share-layer').show();
+            $('.audio-click').hide();
         });
         $('.share-layer').on('touchend', function() {
             $(this).hide();
+            $('.audio-click').show();
         })
     },
 

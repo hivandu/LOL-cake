@@ -62,7 +62,7 @@
         </section>
         <!-- 第二屏首页：过渡 -->
         <section class="secondPage animated" style="height:100%">
-            <img lazy-src="images/secondPage-letter.png" alt="" class="letter">
+            <!-- <img lazy-src="images/secondPage-letter.png" alt="" class="letter"> -->
             <img alt="" lazy-src="images/touch-hand.png" class="touch-hand animated">
             <img alt="" lazy-src="images/logo.png" class="logo">
             <img alt="" lazy-src="images/secondPage-1.png" class="second-1 animated">
@@ -71,6 +71,10 @@
             <img alt="" lazy-src="images/secondPage-4.png" class="second-4 animated">
             <img alt="" lazy-src="images/secondPage-5.png" class="second-5 animated">
             <div class="screen-click"></div>
+            <div class="letter-outer">
+                <!-- <img lazy-src="images/letter-close.png" alt="" class="letter-close animated"> -->
+                <!-- <img lazy-src="images/letter-open.png" alt="" class="letter-open"> -->
+            </div>
             <img lazy-src="images/secondPage-screen.png" alt="" class="screen animated">
             <div class="typeContainer">
             </div>
@@ -95,7 +99,10 @@
         <div class="swiper-container animated">
             <div class="swiper-wrapper">
                 <section class="swiper-slide slide1 animated">
-                    <span class="slide-font"></span>
+                    <div class="slide-font-outer" id="font-outer">
+                        <span class="slide-font"></span>
+                    </div>
+                    <!-- <img lazy-src="images/lantern.png" alt="" class="lantern"> -->
                     <img alt="" lazy-src="images/slide1-mask.png" class="slide1-mask animated">
                     <img alt="" lazy-src="images/slide1-2.png" class="slide1-2 animated">
                     <img alt="" lazy-src="images/slide1-3.png" class="slide1-3 animated">
@@ -109,7 +116,10 @@
                     <img lazy-src="images/slide1-font.png" alt="" style="display:none;">
                 </section>
                 <section class="swiper-slide slide2 animated">
-                    <span class="slide-font"></span>
+                    <div class="slide-font-outer" id="font-outer">
+                        <span class="slide-font"></span>
+                    </div>
+                    <!-- <img lazy-src="images/tone.png" alt="" class="tone"> -->
                     <img alt="" lazy-src="images/slide2-mask.png" class="slide2-mask animated">
                     <img alt="" lazy-src="images/slide2-2.png" class="slide2-2 animated">
                     <img alt="" lazy-src="images/slide2-3.png" class="slide2-3 animated">
@@ -123,7 +133,18 @@
                     </div>
                 </section>
                 <section class="swiper-slide slide3 animated">
-                    <span class="slide-font"></span>
+                    <div class="slide-font-outer" id="font-outer">
+                        <span class="slide-font"></span>
+                    </div>
+                   <!--  <div class="helix">
+                        <img lazy-src="images/helix-1.png" alt="" class="helix-1">
+                        <img lazy-src="images/helix-2.png" alt="" class="helix-2">
+                        <img lazy-src="images/helix-3.png" alt="" class="helix-3">
+                        <img lazy-src="images/helix-4.png" alt="" class="helix-4">
+                        <img lazy-src="images/helix-5.png" alt="" class="helix-5">
+                        <img lazy-src="images/helix-6.png" alt="" class="helix-6">
+                        <img lazy-src="images/helix-7.png" alt="" class="helix-7">
+                    </div> -->
                     <img alt="" lazy-src="images/slide3-mask.png" class="slide3-mask animated">
                     <img alt="" lazy-src="images/slide3-2.png" class="slide3-2 animated">
                     <img alt="" lazy-src="images/slide3-3.png" class="slide3-3 animated">
@@ -137,7 +158,10 @@
                     </div>
                 </section>
                 <section class="swiper-slide slide4 animated">
-                    <span class="slide-font"></span>
+                    <div class="slide-font-outer" id="font-outer">
+                        <span class="slide-font"></span>
+                    </div>
+                    <!-- <img lazy-src="images/leaf.png" alt="" class="leaf"> -->
                     <img alt="" lazy-src="images/slide4-mask.png" class="slide4-mask animated">
                     <img alt="" lazy-src="images/slide4-2.png" class="slide4-2 animated">
                     <img alt="" lazy-src="images/slide4-bg.png" class="slide4-bg animated">
@@ -150,7 +174,10 @@
                     </div>
                 </section>
                 <section class="swiper-slide slide5 animated">
-                    <span class="slide-font"></span>
+                    <div class="slide-font-outer" id="font-outer">
+                        <span class="slide-font"></span>
+                    </div>
+                    <!-- <img lazy-src="images/bullet.png" alt="" class="bullet"> -->
                     <img alt="" lazy-src="images/slide5-mask.png" class="slide5-mask animated">
                     <img alt="" lazy-src="images/slide5-2.png" class="slide5-2 animated">
                     <img alt="" lazy-src="images/slide5-3.png" class="slide5-3 animated">
@@ -206,11 +233,11 @@
 <script src="javascripts/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="javascripts/main.js" type="text/javascript" charset="utf-8"></script>
-<script src="http://sdi.3g.qq.com/js?aid=2016080820104901189"></script>
+<!-- <script src="http://sdi.3g.qq.com/js?aid=2016080820104901189"></script> -->
 <script type="text/javascript" src="javascripts/package.js"></script>
 <script type="text/javascript">
 _sdi.share.init({
-    img_url: "images/title.jpg",
+    img_url: "./images/title.jpg",
     link: location.href,
     desc: 'LOL - 中秋月饼',
     title: 'LOL，哈根达斯中秋月饼'

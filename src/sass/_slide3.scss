@@ -27,11 +27,15 @@
         top: 0.33rem;
     }
     .slide-font {
-        top: 13rem;
-        left: 5.3rem;
+        top: 0;
+        left: 0;
         background: url(../images/slide3-font.png) no-repeat;
         background-size: 1600px;
         opacity: 1;
+    }
+    .slide-font-outer {
+        top: 12rem;
+        left: 4.3rem;
     }
 }
 
@@ -68,4 +72,72 @@
         top: 0.26rem;
         left: 6.03rem;
     }
+}
+
+.helix {
+    width: 9.93rem;
+    height: 8.6rem;
+    position: absolute;
+    top: 14.3rem;
+    left: 9rem;
+    z-index: 101;
+}
+
+.helix-1,
+.helix-2,
+.helix-3,
+.helix-4,
+.helix-5,
+.helix-6,
+.helix-7 {
+    animation: circle 7s infinite ease;
+}
+
+.helix-1 {
+    position: absolute;
+    width: 1.7rem;
+    top: 0;
+    left: 6rem;
+}
+
+.helix-2 {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 1.2rem;
+}
+
+.helix-3 {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    width: 1rem;
+}
+
+.helix-4 {
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    width: 0.8rem;
+}
+
+.helix-5 {
+    position: absolute;
+    width: 1.2rem;
+    top: 4rem;
+    left: 4rem;
+}
+
+.helix-6 {
+    position: absolute;
+    width: 1.1rem;
+    top: 5rem;
+    left: -1rem;
+}
+
+.helix-7 {
+    position: absolute;
+    width: 1rem;
+    top: 3rem;
+    left: 8rem;
 }

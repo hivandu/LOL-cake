@@ -1,18 +1,18 @@
 .slide4 {
     background-color: #0E0706;
-    opacity:0;
+    opacity: 0;
     .slide4-mask {
         position: absolute;
         width: 100%;
         top: 0.33rem;
         left: 0;
-        z-index:99;
+        z-index: 99;
     }
     .slide4-2 {
         position: absolute;
         width: 24.86rem;
-        z-index:98;
-        opacity:0;
+        z-index: 98;
+        opacity: 0;
         top: 0.33rem;
     }
     .slide4-bg {
@@ -20,49 +20,59 @@
         width: 24.8rem;
         top: 0.33rem;
     }
-    .slide-font{
-      top: 12.6rem;
-      left: 6.76rem;
-      background: url(../images/slide4-font.png) no-repeat;
-      background-size: 1600px;
-      opacity:1;
+    .slide-font {
+        top: 0;
+        left: 0;
+        background: url(../images/slide4-font.png) no-repeat;
+        background-size: 1600px;
+        opacity: 1;
+    }
+    .slide-font-outer {
+        top: 12.6rem;
+        left: 6.76rem;
     }
 }
 
+.slide4-text {
+    position: absolute;
+    z-index: 101;
+    top: 28.93rem;
+    left: 2.7rem;
+    .slide4-t-1 {
+        width: 0.96rem;
+        top: 0.2rem;
+        left: 0;
+        position: absolute;
+        opacity: 0;
+    }
+    .slide4-t-2 {
+        position: absolute;
+        opacity: 0;
+        width: 2.7rem;
+        top: 0;
+        left: 1.53rem;
+    }
+    .slide4-t-3 {
+        position: absolute;
+        opacity: 0;
+        width: 0.86rem;
+        top: 0.26rem;
+        left: 4.8rem;
+    }
+    .slide4-t-4 {
+        position: absolute;
+        opacity: 0;
+        width: 0.8rem;
+        top: 0.26rem;
+        left: 6.03rem;
+    }
+}
 
-
-.slide4-text{
-  position: absolute;
-  z-index:101;
-  top: 28.93rem;
-  left:2.7rem;
-
-  .slide4-t-1{
-    width: 0.96rem;
-    top: 0.2rem;
-    left: 0;
+.leaf {
+    width: 13.33rem;
     position: absolute;
-    opacity:0;
-  }
-  .slide4-t-2{
-    position: absolute;
-    opacity:0;
-    width: 2.7rem;
-    top: 0;
-    left:1.53rem;
-  }
-  .slide4-t-3{
-    position: absolute;
-    opacity:0;
-    width: 0.86rem;
-    top: 0.26rem;
-    left: 4.8rem;
-  }
-  .slide4-t-4{
-    position: absolute;
-    opacity:0;
-    width: 0.8rem;
-    top: 0.26rem;
-    left:6.03rem;
-  }
+    z-index: 101;
+    top: 11rem;
+    left: 6rem;
+    animation: rightDownLoop 4s infinite ease-in;
 }
